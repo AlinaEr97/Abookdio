@@ -1,0 +1,70 @@
+%a-decor {
+	font-family: Lato;
+	font-size: 24px;
+	color: #f8f4f4;
+}
+
+%button {
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	line-height: 2;
+	border-radius: 25px;
+	background-color: #000000;
+	cursor: pointer;
+	&:hover {
+		box-shadow: 0px 3px 3px 0px#0e0805;
+		background-color: #3a2418;
+	}
+	&:active {
+		box-shadow: none;
+		transform: translate(0, 2px); 
+	}
+}
+
+%animation {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+%animation2 {
+	transform: translateX(40px);
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+}
+
+@mixin input() {
+	margin: 0 auto 30px;
+	padding: 13px 30px;
+	width: 700px;
+	font-family: Lato;
+	font-size: 22px;
+	border: 1px solid #000000;
+	border-radius: 25px;
+
+	@media (max-width: 1300px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 1000px) {
+		padding: 8px 25px;
+		width: 500px;
+		font-size: 20px;
+	}
+	@media (max-width: 700px) {
+		margin-bottom: 15px;
+		width: 450px;
+		font-size: 17px;
+	}
+	@media (max-width: 600px) {
+		width: 400px;
+	}
+	@media (max-width: 500px) {
+		width: 350px;
+		font-size: 15px;
+	}
+	@media (max-width: 400px) {
+		width: 260px;
+	}
+}

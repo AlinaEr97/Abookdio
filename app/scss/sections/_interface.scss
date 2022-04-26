@@ -1,0 +1,163 @@
+.interface {
+	padding: 100px 30px 0;
+	max-width: 100%;
+	position: relative;
+	border-left: 12px double black;
+	border-right: 12px double black;
+
+	@media (max-width: 768px) {
+		padding-top: 30px;
+	}
+	@media (max-width: 480px) {
+		padding: 30px 0 0;
+	}
+
+	&__text {
+		margin: 0 auto 30px;
+		
+		@media (max-width: 768px) {
+			margin: 0 auto;
+		}
+	}
+		
+	&__title {
+		@extend %animation;
+		margin-bottom: 36px;
+		font-family: MyriadProRegular;
+		font-size: 42px;
+		text-align: center;
+		line-height: 1;
+
+		@media (max-width: 600px) {
+			font-size: 38px;
+		}
+		@media (max-width: 450px) {
+			font-size: 32px;
+		}
+		@media (max-width: 450px) {
+			font-size: 28px;
+		}
+	}
+
+	&__blackline {
+		margin: 0 auto;
+		width: 100px;
+		height: 2px;
+		display: block;
+		background-color: #000000;
+		border-radius: 1px;
+
+		@media (max-width: 650px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 450px) {
+			width: 50px;
+		}
+	}
+}
+	
+.image-slider {
+	margin: 0 auto;
+	padding-top: 180px;
+	min-height: 850px;
+	position: relative;
+	background: url('../img/interface/main-img.png');
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media (max-width: 650px) {
+		padding-top: 75px;
+		min-height: 650px;
+		background-size: contain;
+	}
+	@media (max-width: 400px) {
+		height: 450px;	
+	}
+	@media (max-width: 330px) {
+		padding-top: 82px;
+	}
+	
+	&__wrapper {
+		width: 100%;
+	}
+
+	&__slide {
+		width: auto;
+		opacity: 0;
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__image {
+		width: 266px;
+		height: 470px;
+		border: 1px solid #e3e3e3;
+
+		@media (max-width: 650px) {
+			width: 272px;
+			height: 480px;
+		}
+		@media (max-width: 350px) {
+			width: 268px;
+			height: 475px;
+		}
+		@media (max-width: 340px) {
+			width: 260px;
+			height: 470px;
+		}
+		@media (max-width: 330px) {
+			width: 251px;
+			height: 455px;
+		}
+	}
+}
+
+.swiper-slide-active {
+	padding-right: 4px;
+	opacity: 1;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+	opacity: 0.5;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	color: black !important;
+}
+
+.swiper-button-prev {
+	@media (max-width: 450px) {
+		margin-left: -10px;
+	}
+}
+
+.swiper-button-next {
+	@media (max-width: 450px) {
+		margin-right: -10px;
+	}
+}
+
+.swiper-pagination {
+
+	@media (max-width: 650px) {
+		margin: 85px 49% 0;
+		position: static !important;
+	}
+	@media (max-width: 400px) {
+		margin-top: 25px;
+	}
+	@media (max-width: 360px) {
+		margin-top: 0;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background: #0a0a0a !important;
+}
+
+

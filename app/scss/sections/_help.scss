@@ -1,0 +1,141 @@
+.help {
+	padding: 65px 0 50px;
+	max-width: 100%;
+	min-height: 546px;
+	border-left: 12px double black;
+	border-right: 12px double black;
+	border-bottom: 12px double black;
+
+	@media (max-width: 500px) {
+		padding-top: 60px;
+		min-height: 500px;
+	}
+	
+	&__block {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	&__main-title {
+		@extend %animation;
+		margin-bottom: 25px;
+		font-family: "MyriadProRegular";
+		font-size: 46px;
+		
+		@media (max-width: 1440px) {
+			font-size: 42px;
+		}
+		@media (max-width: 1300px) {
+			margin-bottom: 15px;
+		}
+		@media (max-width: 1000px) {
+			font-size: 37px;
+		}
+		@media (max-width: 800px) {
+			font-size: 34px;
+		}
+		@media (max-width: 700px) {
+			margin-bottom: 10px;
+		}
+		@media (max-width: 500px) {
+			font-size: 28px;
+		}
+		@media (max-width: 400px) {
+			font-size: 26px;
+		}
+	}
+	
+	&__title {
+		@extend %animation;
+		margin-bottom: 50px;
+		font-family: "MyriadProRegular";
+		font-size: 36px;
+	
+		@media (max-width: 1300px) {
+			margin-bottom: 35px;
+		}
+		@media (max-width: 1000px) {
+			font-size: 32px;
+		}
+		@media (max-width: 800px) {
+			font-size: 27px;
+		}
+		@media (max-width: 700px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 500px) {
+			font-size: 20px;
+		}
+		@media (max-width: 400px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+
+	&__input {
+		@include input;
+	}
+
+	&__text {
+		@include input;
+		margin-bottom: 50px;
+		width: 700px;
+		height: 200px;
+
+		@media (max-width: 1300px) {
+			margin-bottom: 35px;
+		}
+		@media (max-width: 1000px) {
+			margin-bottom: 25px;
+			height: 150px;
+		}
+		@media (max-width: 700px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 500px) {
+			height: 100px;
+		}
+	}
+
+	&__button {
+		margin: 0 auto;
+		width: 180px;
+		height: 62px;
+		display: block;
+		font-family: Lato;
+		font-size: 22px;
+		font-weight: bold;
+		color: #ffffff;
+		border: 1px solid rgb(77, 151, 54);
+		background-color: #6fc754;
+		border-radius: 21px;
+		&:hover {
+			border: none;
+			box-shadow: 0px 3px 3px 0px #28471f;
+			background-color: #549740;
+		}
+		&:active {
+			box-shadow: none;
+		}	
+
+		@media (max-width: 1000px) {
+			width: 150px;
+			height: 50px;
+			font-size: 19px;
+		}
+		@media (max-width: 700px) {
+			height: 45px;
+			font-size: 17px;
+		}
+		@media (max-width: 500px) {
+			width: 120px;
+			font-size: 15px;
+		}
+	}
+}

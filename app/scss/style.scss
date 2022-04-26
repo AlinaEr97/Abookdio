@@ -1,0 +1,40 @@
+//обнуление
+@import "general/null";
+
+//Шрифты
+@import "general/fonts";
+
+//Миксины и расширения
+@import "general/mixins";
+
+//Стили для всей страницы
+@import "general/body";
+
+//Главный экран
+@import "sections/hero";
+
+//О приложении
+@import "sections/description";
+
+//О книгах
+@import "sections/library";
+
+//Об интерфейсе
+@import "sections/interface";
+
+//Отзывы
+@import "sections/comments";
+
+//Тарифы
+@import "sections/plans";
+
+//Помощь
+@import "sections/help";
+
+//Обзие нсстройки
+@import "general/animation";
+
+//Подвал
+@import "sections/footer";
+
+
