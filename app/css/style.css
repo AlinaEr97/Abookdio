@@ -89,12 +89,14 @@ h6 {
   font-family: "MyriadProRegular";
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
   src: url("../fonts/MyriadProRegular.woff") format("woff");
 }
 @font-face {
   font-family: "Lato";
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
   src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
 }
 .right-menu__link, .left-menu__link {
