@@ -11033,6 +11033,12 @@ new Swiper (".image-slider", {
 		1400: {
 			spaceBetween: -1000,
 		},
+		1600: {
+			spaceBetween: -1200,
+		},
+		1800: {
+			spaceBetween: -1400,
+		},
 	},
 });
 
